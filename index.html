@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Flat Responsive Bootstrap Website Tutorial
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" , rel="stylesheet"
+        ,integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" , crossorigin="anonymous"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/scrolling.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navber-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+                <li><a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a class="nav-item nav-link" href="#about">About</a></li>
+                <li><a class="nav-item nav-link" href="#features">Features</a></li>
+                <li><a class="nav-item nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-item nav-link" href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home">
+        <img src="img/desktop.png" class="banner">
+    </div>
+
+    <div id="about" class="container-fluid text-center">
+        <h1>Welcome to my Website</h1>
+        <h3>Let me show you how to create a fantastic looking flat website using Bootstrap along with some HTML and CSS
+            snippets.</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Creating a website can be done in many ways. Many web hosting providers provide website building
+                    tools and software. This is the easiest method of building a website. Alternatively, you can use
+                    programs such as Wordpress and Drupal to create your website. It all depeads on your comfort level.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/code.png">
+            </div>
+        </div><!-- end of row -->
+        <br>
+        <h3><i>"This is the best website course ever!" -J. Johnston</i></h3>
+    </div><!-- end of container -->
+    <img src="img/charts.png" alt="image" class="banner">
+
+    <div id="features" class="container-fluid text-center">
+        <h2>Get to know out Features</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/html5.png" alt="" id="icon">
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-4">
+                <img src="img/bootstrap.png" alt="" id="icon">
+                <h3>BOOTSTRAP</h3>
+            </div>
+            <div class="col-4">
+                <img src="img/css3.png" alt="" id="icon">
+                <h3>CSS3</h3>
+            </div>
+        </div><!-- end of row -->
+        <br><br>
+        <h3>Build responsive, mobile-first projects on the web with the world's most popular front-end component
+            library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</h3>
+    </div><!-- end of container -->
+
+    <img src="img/people.png" alt="" class="banner">
+
+    <div id="portfolio" class="container-fluid text-center">
+        <h2>Check out our Portfolio</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/icons/camera.png" alt="" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/mic.png" alt="" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/phone.png" alt="" id="icon">
+            </div>
+
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/calendar.png" alt="" id="icon">
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/tv.png" alt="" id="icon">
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/clock.png" alt="" id="icon">
+            </div>
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+
+    <img src="img/social.png" alt="" class="banner">
+    <footer id="connect" class="container-fluid text-center">
+        <div class="">
+            <h2>Connect</h2>
+            <br>
+            <div class="social">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div><!-- end of row -->
+    </footer><!-- end of container -->
+</body>
+
+</html>
